@@ -1,0 +1,6 @@
+{
+  "name": "スマホ料金比較シミュレーター",
+  "description": "検討中キャリアと乗り換え先の料金を比較して、2年間でどれくらいお得になるか診断するツール。",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

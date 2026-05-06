@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Outfit:wght@400;700;900&family=Space+Grotesk:wght@400;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-family-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-family-display), ui-sans-serif, system-ui, sans-serif;
+  --color-brand: var(--theme-brand);
+  --color-brand-light: var(--theme-brand-light);
+}
+
+:root {
+  --font-family-body: "Inter", "Noto Sans JP";
+  --font-family-display: "Inter", "Noto Sans JP";
+  --theme-brand: #2563eb;
+  --theme-brand-light: #eff6ff;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display text-slate-900;
+  }
+}
+
+.input-card {
+  @apply bg-white p-6 rounded-2xl shadow-sm border border-slate-100;
+}
+
+.result-card {
+  @apply bg-white p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100;
+}
